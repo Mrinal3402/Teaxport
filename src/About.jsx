@@ -22,7 +22,7 @@ const About = () => {
 
 
     const aboutUsLandingData = {
-        image: "C:\\Users\\hp\\Desktop\\Teaxport\\src\\images\\AboutUs\\Landing.jpg", // Replace with your image URL
+        image: "./images/AboutUs/About.png", // Replace with your image URL
         title: "About us",
         description:
           "Texport is a global export house in the business of manufacturing and exporting apparel and textile products. Known for its people's first approach in business, the company is committed to sustainably contributing to the spectrum of the textile industry fulfilling the requirements of its customers, associates, society, and the environment.",
