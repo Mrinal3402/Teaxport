@@ -13,7 +13,7 @@ import OurLegacy from './OurLegacy';
 const App = () => {
   return (
     <div  className="h-screen ">
-     <Router>
+     <Router basename="/Teaxport/">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/About" element={<About />} />
