@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingPage from './LandingPage'
 import About from './About'
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OurApporach from './OurApporach';
 import Leadership from './Leadership';
 import OurLegacy from './OurLegacy';
