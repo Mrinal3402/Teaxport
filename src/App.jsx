@@ -51,7 +51,7 @@ const App = () => {
 export default App
 
 
-// Install GSAP if not already installed: npm install gsap
+{/* // Install GSAP if not already installed: npm install gsap
 // Import necessary GSAP plugins
 // import React, { useEffect, useRef } from "react";
 // import { gsap } from "gsap";
@@ -61,7 +61,7 @@ export default App
 // gsap.registerPlugin(ScrollTrigger);
 
 // const MultiSectionAnimation = () => {
-//   const containerRef = useRef(null);
+//   const containerRef = useRef(null); */}
 
 //   useEffect(() => {
 //     const sections = document.querySelectorAll(".section");

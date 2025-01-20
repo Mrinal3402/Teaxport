@@ -4,7 +4,6 @@ import AboutUsLanding from './components/AboutUsLanding';
 import SmallAboutLanding from './components/SmallAboutLanding';
 import ValuesSection from './components/ValueSection';
 import Footer from './components/Footer';
-import NewsAndStories from './components/NewsAndStories';
 
 
 const OurApporach = () => {
@@ -51,10 +50,6 @@ const OurApporach = () => {
          <div className='h-[50vh]'>
             <SmallAboutLanding smallaboutlanding={smallaboutlanding2.text} image={smallaboutlanding2.image}heading={smallaboutlanding2.heading} />
          </div>
-         {/* News and Stories */}
-        <div className="h-screen">
-          <NewsAndStories/>
-        </div>
 
          <div className="h-[50vh]">
             <Footer />

@@ -7,7 +7,7 @@ const AboutUsLanding = ({ image, title, description, history }) => {
       <img
         src={image}
         alt="About us"
-        className="w-full h-full object-cover opacity-50"
+        className="w-full h-full object-cover opacity-80"
       />
     </div>
     <div className="relative z-10 max-w-4xl top-28">
