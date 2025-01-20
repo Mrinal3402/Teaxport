@@ -8,6 +8,7 @@ import Info from './components/Info'
 import NewsAndStories from './components/NewsAndStories'
 import Footer from './components/Footer'
 import Button from './components/Button'
+import { FaUsers, FaGlobe, FaBuilding, FaRecycle, FaHandshake } from "react-icons/fa";
 
 
 
@@ -51,32 +52,32 @@ const LandingPage = () => {
 
   const info = [
     {
-      // icon: FaUsers,
+      icon: FaUsers,
       title: "Over 15 K+ Associates",
       description: "Dedicated professionals worldwide",
     },
     {
-      // icon: FaGlobe,
+      icon: FaGlobe,
       title: "Global Reach",
       description: "Serving clients across multiple continents",
     },
     {
-      // icon: FaBuilding,
+      icon: FaBuilding,
       title: "Modern Facilities",
       description: "Cutting-edge production environments",
     },
     {
-      // icon: FaRecycle,
+      icon: FaRecycle,
       title: "Sustainable Practices",
       description: "Eco-friendly methods and materials",
     },
     {
-      // icon: FaHandshake,
+      icon: FaHandshake,
       title: "Co-Creation Platform",
       description: "Collaborative Product Development",
     },
     {
-      // icon: FaHandshake,
+      icon: FaHandshake,
       title: "People First Approach",
       description: "Prioritizing well-being and growth",
     },
@@ -181,7 +182,7 @@ const LandingPage = () => {
         {info.map((card, index) => (
           <Info
             key={index}
-            // icon={card.icon}
+            icon={card.icon}
             title={card.title}
             description={card.description}
           />

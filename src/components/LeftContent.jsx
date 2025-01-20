@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-const LeftContent = ({heading,para,buttontext,head}) => {
+const LeftContent = ({heading,para,buttontext,head,para2}) => {
     function click(){
         console.log('click')
     }
@@ -12,6 +12,9 @@ const LeftContent = ({heading,para,buttontext,head}) => {
     </h1>
     <p className="text-lg px-10 ml-3 text-gray-800 mb-6">
       {para}
+    </p>
+    <p className="text-lg px-10 ml-3 text-gray-800 mb-6">
+      {para2}
     </p>
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -18,30 +18,30 @@ function Footer() {
           <div className=''>
             <h3 className="text-lg font-semibold tracking-wider font-custom">Company</h3>
             <ul className="mt-3 text-sm font-custom leading-loose">
-              <li>Capabilities</li>
-              <li>Transparency</li>
-              <li>People</li>
-              <li>Careers</li>
-              <li>Contact</li>
+              <li><Link to="/contact">Capabilities</Link></li>
+              <li><Link to="/contact">Transparency</Link></li>
+              <li><Link to="/contact">People</Link></li>
+              <li><Link to="/contact">Careers</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
           <div className=''>
             <h3 className="text-lg font-semibold tracking-wider font-custom">Product</h3>
             <ul className="mt-3 text-sm font-custom leading-loose">
-              <li>Mens wear</li>
-              <li>Womens wear</li>
-              <li>Kids wear</li>
-              <li>Knitted fabrics</li>
+              <li><Link to="/Mens">Mens wear</Link></li>
+              <li><Link to="/Womens">Womens wear</Link></li>
+              <li><Link to="/Kids">Kids wear</Link></li>
+              <li><Link to="/KnittedFabrics">Knitted fabrics</Link></li>
             </ul>
           </div>
 
           <div className=''>
             <h3 className="text-lg font-semibold tracking-wider font-custom">Connect</h3>
             <ul className="mt-3 text-sm font-custom leading-loose">
-              <li>Linkedin</li>
-              <li>Instagram</li>
-              <li>Facebook</li>
+            <li><Link to="https://www.linkedin.com/">Linkedin</Link></li>
+            <li><Link to="https://www.instagram.com/">Instagram</Link></li>
+            <li><Link to="https://www.facebook.com/">Facebook</Link></li>
             </ul>
           </div>
 

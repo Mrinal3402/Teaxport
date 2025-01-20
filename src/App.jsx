@@ -4,9 +4,19 @@ import About from './About'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OurApporach from './OurApporach';
 import Leadership from './Leadership';
-
-import Navbar from './components/Navbar';
 import OurLegacy from './OurLegacy';
+import Product from './Product';
+import Womens from './Womens';
+import Kids from './Kids';
+import KnittedFabrics from './KnittedFabrics';
+import Scrolltop from './components/Scrolltop';
+import Mens from './components/Mens';
+import People from './People';
+import Culture from './Culture';
+import Contact from './Contact';
+import News from './News';
+import Careers from './Careers';
+
 
 
 
@@ -14,12 +24,22 @@ const App = () => {
   return (
     <div  className="h-screen ">
      <Router basename="/Teaxport/">
+      <Scrolltop/>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Product" element={<Product/>} />
+        <Route path="/People" element={<People/>} />
+        <Route path="/Culture" element={<Culture/>} />
+        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/News" element={<News/>} />
+        <Route path="/Careers" element={<Careers/>} />
+        <Route path="/Mens" element={<Mens/>} />
+        <Route path="/Womens" element={<Womens/>} />
+        <Route path="/Kids" element={<Kids/>} />
+        <Route path="/KnittedFabrics" element={<KnittedFabrics/>} />
         <Route path="/OurApproach" element={<OurApporach />} />
         <Route path="/OurLegacy" element={<OurLegacy />} />
-        {/* <Route path="/Ancestry" element={<Ancestry />} /> */}
         <Route path="/Leadership" element={<Leadership />} />
       </Routes>
      </Router>
