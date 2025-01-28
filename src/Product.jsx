@@ -22,7 +22,7 @@ const content={
     <div>
         <Navbar/>
 
-        <div className=" h-[90vh]">
+        <div className=" h-[90vh] bg-gray-400">
             <AboutUsLanding title={content.title} description={content.description} history={content.history}/>
         </div>
 
@@ -36,7 +36,7 @@ const content={
                 </div>
             </div>
             <div className="h-screen w-1/2  overflow-hidden object-contain">
-                <RightContent image="./images/LandingPage/B.png" />
+                <RightContent image="./images/LandingPage/C.png" />
             </div>
 
         </div>
@@ -49,7 +49,7 @@ const content={
                 </div>
             </div>
             <div className="h-screen w-1/2  overflow-hidden object-contain">
-                <RightContent image="./images/LandingPage/B.png" />
+                <RightContent image="./images/LandingPage/C.png" />
             </div>
 
         </div>
@@ -62,7 +62,7 @@ const content={
                 </div>
             </div>
             <div className="h-screen w-1/2  overflow-hidden object-contain">
-                <RightContent image="./images/LandingPage/B.png" />
+                <RightContent image="./images/LandingPage/C.png" />
             </div>
 
         </div>
@@ -75,7 +75,7 @@ const content={
                 </div>
             </div>
             <div className="h-screen w-1/2  overflow-hidden object-contain">
-                <RightContent image="./images/LandingPage/B.png" />
+                <RightContent image="./images/LandingPage/C.png" />
             </div>
 
         </div>

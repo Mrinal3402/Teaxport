@@ -10,7 +10,7 @@ const RightContent = ({image,heading,desc}) => {
     <img 
       src= {image}
       alt="Factory Scene"
-      className="shadow-lg w-screen"
+      className="shadow-lg w-screen absolute"
     />
   </div> 
     

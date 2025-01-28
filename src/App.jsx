@@ -1,16 +1,17 @@
 import React from 'react'
 import LandingPage from './LandingPage'
 import About from './About'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import OurApporach from './OurApporach';
 import Leadership from './Leadership';
 import OurLegacy from './OurLegacy';
 import Product from './Product';
 import Womens from './Womens';
 import Kids from './Kids';
+import Mens from './components/Mens';
+
 import KnittedFabrics from './KnittedFabrics';
 import Scrolltop from './components/Scrolltop';
-import Mens from './components/Mens';
 import People from './People';
 import Culture from './Culture';
 import Contact from './Contact';
@@ -20,10 +21,11 @@ import Careers from './Careers';
 
 
 
+
 const App = () => {
   return (
     <div  className="h-screen ">
-     <Router basename="/Teaxport/">
+     <BrowserRouter basename="/Teaxport">
       <Scrolltop/>
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -42,7 +44,7 @@ const App = () => {
         <Route path="/OurLegacy" element={<OurLegacy />} />
         <Route path="/Leadership" element={<Leadership />} />
       </Routes>
-     </Router>
+     </BrowserRouter>
 
     </div>
   )

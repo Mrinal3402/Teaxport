@@ -102,7 +102,7 @@ const LandingPage = () => {
           </div>
 
         </div>
-        <div className="h-screen w-1/2  overflow-hidden object-contain">
+        <div className="h-screen w-1/2 relative overflow-hidden object-contain">
           <RightContent image="./images/LandingPage/A.png" />
         
         </div>
@@ -190,7 +190,7 @@ const LandingPage = () => {
       </div>
     </div>
 
-{/* News and Stories */}
+    {/* News and Stories */}
         <div className="h-screen">
           <NewsAndStories/>
         </div>
@@ -205,3 +205,110 @@ const LandingPage = () => {
 }
 
 export default LandingPage
+
+
+
+
+// import React, { useEffect } from "react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import LeftContent from "./components/LeftContent";
+// import RightContent from "./components/RightContent";
+// import Button from "./components/Button";
+
+// // Register ScrollTrigger with GSAP
+// gsap.registerPlugin(ScrollTrigger);
+
+// const LandingPage = () => {
+//   useEffect(() => {
+//     // Loop through each section and create scroll-triggered animations
+//     document.querySelectorAll('.section').forEach((section, index) => {
+//       // Pin the right content for each section
+//       ScrollTrigger.create({
+//         trigger: section.querySelector('.right-content'),
+//         start: "top top", // Pin when the top of the section hits the top of the viewport
+//         end: "+=100%", // Unpin when the next section reaches,
+//         pin: true, // Pin the right content
+//         pinSpacing: false, // No extra spacing after unpinning
+//         scrub: true, // Smooth scrolling
+//         markers: false, // Optional: Show markers for debugging
+//       });
+
+//       // ScrollTrigger for each section to manage smooth scrolling
+//       ScrollTrigger.create({
+//         trigger: section,
+//         start: "top top", // Start when the top of the section reaches the top of the viewport
+//         end: "+=100%", // End when the next section begins
+//         scrub: true, // Smooth transition between sections
+//         markers: false, // Optional: Show markers for debugging
+//       });
+//     });
+//   }, []);
+
+//   return (
+//     <div className="relative">
+//       {/* Section 1 */}
+//       <div className="section flex" data-scroll-section>
+//         {/* Left Content */}
+//         <div className="w-1/2 h-screen bg-[#E2E3E6] flex items-center relative">
+//           <LeftContent
+//             heading="Setting New Standards in Apparel Exports"
+//             para="Crafting quality apparel with a commitment to ethical practices and sustainability since 1978"
+//           />
+//           <div className="absolute left-[8%] top-[65%]">
+//             <Button buttontext={"SEE MORE"} path={""} />
+//           </div>
+//         </div>
+
+//         {/* Right Content (Pinned) */}
+//         <div className="right-content w-1/2 h-screen relative overflow-hidden">
+//           <RightContent image="./images/LandingPage/A.png" />
+//         </div>
+//       </div>
+
+//       {/* Section 2 */}
+//       <div className="section flex" data-scroll-section>
+//         {/* Left Content */}
+//         <div className="w-1/2 h-screen flex bg-[#E2E3E6] items-center relative">
+//           <LeftContent
+//             heading="Your Partner since 1978"
+//             para="Texport is a well-recognized business house in the apparel industry. It is amongst the initiators of apparel exports from India."
+//             head="About Us"
+//           />
+//           <div className="absolute left-[15%] top-[55%]">
+//             <Button buttontext={"SEE MORE"} path={""} />
+//           </div>
+//         </div>
+
+//         {/* Right Content (Pinned) */}
+//         <div className="right-content w-1/2 h-screen relative overflow-hidden">
+//           <RightContent image="./images/LandingPage/B.png" />
+//         </div>
+//       </div>
+
+//       {/* Section 3 */}
+//       <div className="section flex" data-scroll-section>
+//         {/* Left Content */}
+//         <div className="w-1/2 h-screen bg-[#E2E3E6] flex items-center relative">
+//           <LeftContent
+//             heading="Our Initiatives"
+//             para="We believe in living in harmony with the environment and we as a business have a very vital role to play to champion the cause"
+//           />
+//           <div className="absolute left-[16%] top-[52%]">
+//             <Button buttontext={"SEE MORE"} path={""} />
+//           </div>
+//         </div>
+
+//         {/* Right Content (Pinned) */}
+//         <div className="right-content w-1/2 h-screen relative overflow-hidden">
+//           <RightContent image="./images/LandingPage/C.png" />
+//         </div>
+//       </div>
+
+//       {/* Section 4 (Example) */}
+
+//     </div>
+//   );
+// };
+
+// export default LandingPage;
