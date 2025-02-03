@@ -3,7 +3,7 @@ import React from 'react'
 const Cards = ({ title, imageUrl, buttonText }) => {
   return (
 <div
-      className="relative flex items-center justify-center w-full h-screen bg-cover bg-center"
+      className="relative flex items-center justify-center w-full h-[70vh] md:h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       {/* <div className="absolute  inset-0 bg-black bg-opacity-40"></div> */}

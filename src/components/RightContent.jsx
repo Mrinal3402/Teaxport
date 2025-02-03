@@ -2,16 +2,16 @@ import React from 'react'
 
 const RightContent = ({image,heading,desc}) => {
   return (
-    <div className="w-full relative">
-    <div className=" h-1/6 flex flex-col justify-center items-start ml-20  top-[30%] w-full z-50 absolute text-white">
-      <h1 className='  text-4xl font-custom font-normal mb-3'>{heading}</h1>
-      <p>{desc}</p>
-    </div>
+    <div className="w-full h-full  relative">
     <img 
       src= {image}
       alt="Factory Scene"
-      className="shadow-lg w-screen absolute"
+      className="shadow-lg w-screen h-full absolute"
     />
+    <div className=" md:h-1/6 flex flex-col md:flex md:flex-col justify-center    items-center   top-[30%] md:w-full z-20 absolute text-white">
+      <h1 className=' md:hidden md:text-4xl text-3xl  text-center font-custom font-normal mb-3 md:mb-3'>{heading}</h1>
+      <p className=' mt-2 text-center md:hidden'>{desc}</p>
+    </div>
   </div> 
     
 )
