@@ -159,7 +159,7 @@ const About = () => {
 
         {/* footer */}
 
-        <div className="h-[50vh]">
+        <div className="h-screen md:h-[50vh]">
             <Footer />
         </div>
 

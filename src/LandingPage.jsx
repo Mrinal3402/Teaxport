@@ -206,7 +206,7 @@ const LandingPage = () => {
         </div>
 {/* footer */}
 
-<div className=" h-[100vh] md:h-[50vh]">
+<div className=" h-screen md:h-[50vh]">
   <Footer />
 </div>
 
