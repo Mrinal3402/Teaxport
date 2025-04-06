@@ -103,7 +103,14 @@ const Legacy = () => {
       {/* legacy content  */}
 
         <div className=" h-[50vh] ">
-            <LegacyContent/>
+            <LegacyContent p1="The leadership at Texport envisions and ensures integrity, adaptability, empathy, resilience, vision and
+                commitment to continuous learning to redefine possibilities to bring about excellence
+                in every aspect of life. With its philosophy of peoples first approach coupled with foresight, Texport has
+                been able to create opportunities out of adversity by embracing change with valor." 
+                
+                p2="The family have always led by example and have brought their experiences, varied strength and values
+                and shared it with the team, which comprises of professionals with expertise in
+                their relavant areas across different functions"/>
         </div>
 
      

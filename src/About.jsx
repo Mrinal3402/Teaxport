@@ -85,10 +85,10 @@ const About = () => {
     
   return (
 
-    <div>
+    <div classname="relative overflow-hidden sm:w-[100vw] max-w-[100vw] h-screen ">
         <Navbar/>
 
-        <div className=' h-[90vh]'>
+        <div className='h-[60vh] md:h-[90vh]'>
         <AboutUsLanding
         image={aboutUsLandingData.image}
         title={aboutUsLandingData.title}

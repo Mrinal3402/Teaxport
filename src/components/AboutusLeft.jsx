@@ -2,12 +2,10 @@ import React from 'react'
 
 const AboutusLeft = ({heading,para,head , Global , Brands ,Associates ,Supporting,Gpara,Bpara,Spara,Apara}) => {
   return (
-    <div className=" flex flex-col absolute top-[8%]    p-8">
+    <div className=" flex flex-col absolute top-[5%]    p-8">
     <p className='text-lg px-10 ml-3 text-gray-800 mb-6'>{head}</p>
-  <h1 className="text-6xl font-custom ml-12 font-normal text-gray-800 mb-10">
-Texport’s reach in <br/>
-the apparel section<br/>
-is across :
+  <h1 className="text-5xl w-[80%] leading-[54px] font-custom ml-12 font-normal text-gray-800 mb-10">
+{heading}
   </h1>
  
 

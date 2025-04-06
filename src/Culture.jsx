@@ -2,13 +2,11 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import AboutUsLanding from './components/AboutUsLanding'
 import InfoSection from './components/InfoSection'
-import LegacyContent from './components/LegacyContent'
+import CultureContent from './components/CultureContent'
 import LeftContent from './components/LeftContent'
 import RightContent from './components/RightContent'
 import Footer from './components/Footer'
-
-
-
+import Certifications from './components/Certifications'
 
 const Culture = () => {
 
@@ -37,12 +35,12 @@ const Culture = () => {
       ];
 
   return (
-    <div>
+    <div className='overflow-hidden relative max-w-[100vw]'>
         <Navbar/>
         <div className="h-[90vh] bg-slate-600">
             <AboutUsLanding/>
         </div>
-        <div className="h-[40vh]">
+        <div className="h-[45vh]">
         <InfoSection cards={cardsData}/>
 
         </div>
@@ -51,8 +49,10 @@ const Culture = () => {
             <AboutUsLanding/>
         </div>
 
-        <div className=" h-[50vh] ">
-            <LegacyContent/>
+        <div className=" h-[30vh] ">
+            <CultureContent p1="We are committed to a people-first and sustainability-driven culture, fostering an inclusive environment and
+empowering employees. By integrating sustainable practices into our operations, we create long-term value where
+growth, innovation, and responsibility align for a better future. "/>
         </div>
 
         <div className="flex bg-[#E2E3E6] justify-between">
@@ -122,9 +122,16 @@ known”.
             </div>
         </div>
 
+
+        {/* Certifications */}
+<div className="h-[50vh]">
+
+        <Certifications/>
+</div>
+
         {/* footer */}
 
-        <div className="h-[50vh]">
+        <div className="h-screen md:h-[50vh]">
             <Footer />
         </div>
     </div>

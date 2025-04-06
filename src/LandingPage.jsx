@@ -1,4 +1,6 @@
-import React from 'react'
+ 
+
+import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import LeftContent from './components/LeftContent'
 import RightContent from './components/RightContent'
@@ -9,7 +11,6 @@ import NewsAndStories from './components/NewsAndStories'
 import Footer from './components/Footer'
 import Button from './components/Button'
 import HeroSlider from './components/HeroSlider'
-
 import { FaUsers, FaGlobe, FaBuilding, FaRecycle, FaHandshake } from "react-icons/fa";
 
 
@@ -18,6 +19,7 @@ import { FaUsers, FaGlobe, FaBuilding, FaRecycle, FaHandshake } from "react-icon
 
 
 const LandingPage = () => {
+
 
   const cards = [
     {
@@ -88,8 +90,10 @@ const LandingPage = () => {
 
 
 
+
   return (
-    <div className='overflow-hidden sm:w-[100vw] text-white bg-[#E2E3E6]'>
+    
+    <div className=' relative overflow-clip sm:w-[100vw] max-w-[100vw]    bg-[#E2E3E6]'>
 
       {/* Navbar rendring */}
       <Navbar/>
@@ -99,53 +103,56 @@ const LandingPage = () => {
         <HeroSlider/>
       </div>
 
-      <div className="hidden md:block">
+      <div className="hidden md:block  ">
 
-      <div className="md:flex md:justify-between">
+      <div className="section sticky top-0 md:flex md:justify-between  ">
 
-        <div className="hidden relative md:h-screen md:w-1/2  md:flex md:items-center ">
+        <div className="hidden relative bg-[#E2E3E6]  md:h-screen md:w-1/2  md:flex md:items-center ">
           <LeftContent heading="Setting New Standards in Apparel Exports" para="Crafting quality apparel with a commitment to ethical practices and sustainability since 1978" />
-          <div className=" absolute left-[15%] top-[55%] ">
+          <div className=" absolute left-[15%] md:left-[16%] top-[55%] ">
           <Button buttontext={"SEE MORE"} path={""}/>
           </div>
 
         </div>
-        <div className=" h-[60vh] md:min-h-screen md:w-1/2 relative overflow-hidden md:object-contain object-contain">
-          <RightContent image="./images/LandingPage/A.png" heading={"Setting New Standards in Apparel Exports"} desc={"Crafting quality apparel with a commitment to ethical practices and sustainability since 1978"}/>
+        <div className="right-content h-[60vh] md:min-h-screen md:w-1/2 overflow-hidden ">
+          <RightContent  image="./images/LandingPage/A.png" heading={"Setting New Standards in Apparel Exports"} desc={"Crafting quality apparel with a commitment to ethical practices and sustainability since 1978"}/>
         
         </div>
 
       </div>
-      <div className="md:flex md:justify-between">
 
-        <div className="hidden  md:h-screen md:w-1/2 relative md:flex md:items-center ">
-          <LeftContent heading="Setting New Standards in Apparel Exports" para="Crafting quality apparel with a commitment to ethical practices and sustainability since 1978" />
-          <div className="  absolute left-[15%] top-[55%]">
+      <div className="section sticky top-0 md:flex md:justify-between  "> 
+
+        <div className="hidden bg-[#E2E3E6]  relative md:h-screen md:w-1/2  md:flex md:items-center  ">
+          <LeftContent head={"About us"} heading="Your Partner since 1978" para="Texport is a well-recognized business house in the apparel industry.It is amongst the initiators of apparel exports from India." />
+          <div className="  absolute left-[15%] md:left-[16%] top-[55%]">
           <Button buttontext={"SEE MORE"} path={""}/>
           </div>
 
         </div>
-        <div className=" h-[60vh] md:min-h-screen md:w-1/2 relative overflow-hidden md:object-contain object-contain">
+        <div className="right-content h-[60vh] md:min-h-screen md:w-1/2    overflow-hidden ">
           <RightContent image="./images/LandingPage/B.png" heading={"Our Initiatives"} desc={"We believe in living in harmony with the environment and we as a business have a very vital role to play to champion the cause"}/>
         
         </div>
 
       </div>
-      <div className="md:flex md:justify-between">
 
-        <div className="hidden relative md:h-screen md:w-1/2  md:flex md:items-center ">
-          <LeftContent heading="Setting New Standards in Apparel Exports" para="Crafting quality apparel with a commitment to ethical practices and sustainability since 1978" />
-          <div className="  absolute left-[15%] top-[55%] ">
+      <div className=" md:flex md:justify-between  ">
+
+        <div className="hidden bg-[#E2E3E6] relative md:h-screen md:w-1/2  md:flex md:items-center ">
+          <LeftContent heading="Our Initiatives" para="We believe in living in harmony with the environment and we as a business have a very vital role to play to champion the cause" />
+          <div className="  absolute left-[15%] md:left-[16%] top-[55%] ">
           <Button buttontext={"SEE MORE"} path={""}/>
           </div>
 
         </div>
-        <div className=" h-[60vh] md:min-h-screen md:w-1/2 relative overflow-hidden md:object-contain object-contain">
+        <div className=" h-[60vh] md:min-h-screen md:w-1/2 z-40 right-0 overflow-hidden ">
           <RightContent image="./images/LandingPage/C.png" heading={"Your Partner since 1978"} desc={"Texport is a well-recognized business house in the apparel industry.It is amongst the initiators of apparel exports from India."}/>
         
         </div>
 
       </div>
+    
       </div>
 
 
@@ -201,12 +208,12 @@ const LandingPage = () => {
     </div>
 
     {/* News and Stories */}
-        <div className="h-screen">
+        <div className="h-[100vh] ">
           <NewsAndStories/>
         </div>
 {/* footer */}
 
-<div className=" h-screen md:h-[50vh]">
+<div className=" h-screen mt-1 md:h-[50vh]">
   <Footer />
 </div>
 
@@ -219,106 +226,5 @@ export default LandingPage
 
 
 
-// import React, { useEffect } from "react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import LeftContent from "./components/LeftContent";
-// import RightContent from "./components/RightContent";
-// import Button from "./components/Button";
 
-// // Register ScrollTrigger with GSAP
-// gsap.registerPlugin(ScrollTrigger);
 
-// const LandingPage = () => {
-//   useEffect(() => {
-//     // Loop through each section and create scroll-triggered animations
-//     document.querySelectorAll('.section').forEach((section, index) => {
-//       // Pin the right content for each section
-//       ScrollTrigger.create({
-//         trigger: section.querySelector('.right-content'),
-//         start: "top top", // Pin when the top of the section hits the top of the viewport
-//         end: "+=100%", // Unpin when the next section reaches,
-//         pin: true, // Pin the right content
-//         pinSpacing: false, // No extra spacing after unpinning
-//         scrub: true, // Smooth scrolling
-//         markers: false, // Optional: Show markers for debugging
-//       });
-
-//       // ScrollTrigger for each section to manage smooth scrolling
-//       ScrollTrigger.create({
-//         trigger: section,
-//         start: "top top", // Start when the top of the section reaches the top of the viewport
-//         end: "+=100%", // End when the next section begins
-//         scrub: true, // Smooth transition between sections
-//         markers: false, // Optional: Show markers for debugging
-//       });
-//     });
-//   }, []);
-
-//   return (
-//     <div className="relative">
-//       {/* Section 1 */}
-//       <div className="section flex" data-scroll-section>
-//         {/* Left Content */}
-//         <div className="w-1/2 h-screen bg-[#E2E3E6] flex items-center relative">
-//           <LeftContent
-//             heading="Setting New Standards in Apparel Exports"
-//             para="Crafting quality apparel with a commitment to ethical practices and sustainability since 1978"
-//           />
-//           <div className="absolute left-[8%] top-[65%]">
-//             <Button buttontext={"SEE MORE"} path={""} />
-//           </div>
-//         </div>
-
-//         {/* Right Content (Pinned) */}
-//         <div className="right-content w-1/2 h-screen relative overflow-hidden">
-//           <RightContent image="./images/LandingPage/A.png" />
-//         </div>
-//       </div>
-
-//       {/* Section 2 */}
-//       <div className="section flex" data-scroll-section>
-//         {/* Left Content */}
-//         <div className="w-1/2 h-screen flex bg-[#E2E3E6] items-center relative">
-//           <LeftContent
-//             heading="Your Partner since 1978"
-//             para="Texport is a well-recognized business house in the apparel industry. It is amongst the initiators of apparel exports from India."
-//             head="About Us"
-//           />
-//           <div className="absolute left-[15%] top-[55%]">
-//             <Button buttontext={"SEE MORE"} path={""} />
-//           </div>
-//         </div>
-
-//         {/* Right Content (Pinned) */}
-//         <div className="right-content w-1/2 h-screen relative overflow-hidden">
-//           <RightContent image="./images/LandingPage/B.png" />
-//         </div>
-//       </div>
-
-//       {/* Section 3 */}
-//       <div className="section flex" data-scroll-section>
-//         {/* Left Content */}
-//         <div className="w-1/2 h-screen bg-[#E2E3E6] flex items-center relative">
-//           <LeftContent
-//             heading="Our Initiatives"
-//             para="We believe in living in harmony with the environment and we as a business have a very vital role to play to champion the cause"
-//           />
-//           <div className="absolute left-[16%] top-[52%]">
-//             <Button buttontext={"SEE MORE"} path={""} />
-//           </div>
-//         </div>
-
-//         {/* Right Content (Pinned) */}
-//         <div className="right-content w-1/2 h-screen relative overflow-hidden">
-//           <RightContent image="./images/LandingPage/C.png" />
-//         </div>
-//       </div>
-
-//       {/* Section 4 (Example) */}
-
-//     </div>
-//   );
-// };
-
-// export default LandingPage;

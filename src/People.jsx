@@ -15,21 +15,21 @@ const People = () => {
           description:
             "Diverse team drives innovation, growth and success",
           buttonText: "See More",
-          path:"/",
+          path:"//",
         },
         {
           title: "Production units",
           description:
             "Skilled team drives quality, efficiency, safety and continuous improvement",
           buttonText: "See More",
-          path:"/",
+          path:"//",
         },
         {
           title: "Knitting Mill",
           description:
             "Experienced team crafts quality textiles through innovation and collaboration",
           buttonText: "See More",
-          path:"/",
+          path:"//",
         },
       ];
   return (
@@ -39,8 +39,10 @@ const People = () => {
         <div className="h-[90vh] bg-red-400">
             <AboutUsLanding/>
         </div>
+        <div className="h-[45vh]">
 
         <InfoSection cards={cardsData}/>
+        </div>
 
          {/* left right content */}
         <div className="flex bg-[#E2E3E6] justify-between">

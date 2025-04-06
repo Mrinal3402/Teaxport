@@ -2,7 +2,7 @@ import React from 'react'
 
 const Years = () => {
   return (
-    <div className=' bg-white bottom-0  h-[20vh] w-full flex justify-center items-center sticky overflow-hidden '>
+    <div className=' bg-white bottom-0  h-[20vh] w-full flex justify-center items-center fixed overflow-hidden '>
         <ul className='flex justify-center gap-16 py-4 border-t-2 border-black text-2xl w-[80vw] mt-3 font-medium '>
             <li>1977</li>
             <li>1978</li>

@@ -17,6 +17,7 @@ import Culture from './Culture';
 import Contact from './Contact';
 import News from './News';
 import Careers from './Careers';
+import Capabilities from './Capabilities';
 
 
 
@@ -24,12 +25,13 @@ import Careers from './Careers';
 
 const App = () => {
   return (
-    <div  className="h-screen ">
+    <div  className="h-screen max-w-[100vw]   ">
      <BrowserRouter basename="/Teaxport">
       <Scrolltop/>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="//" element={<LandingPage />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Capabilities" element={<Capabilities />} />
         <Route path="/Product" element={<Product/>} />
         <Route path="/People" element={<People/>} />
         <Route path="/Culture" element={<Culture/>} />
